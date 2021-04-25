@@ -17,7 +17,7 @@ Il manquerait quelques touches de finalisations pour sublimer le goût, notammen
 
 L'appli est responsive portrait-paysage sur iPhones (même le 12 violet) à partir du SE 1G.
 
-Elle traite la récupération d'images de la librairie photo ou permet lk'usage de la caméra, mais dans cas il faut connecter son iphone externe.
+Elle traite la récupération d'images de la librairie photo ou permet l'usage de la caméra, mais dans cas il faut connecter son iphone au mac.
 
 Ensuite l'usage est intuitif :
 
@@ -28,6 +28,8 @@ Ensuite l'usage est intuitif :
 3) Swipe up on the photo to share it.
 
        Or, use the yellow button.
+       
+ A noter, la photo prise ou choisie est éditable, zoom et recadrage.    
 
 
 Je reste à disposition pour toutes questions éventuelles.
