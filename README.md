@@ -13,6 +13,8 @@
 
 
 
+
+
 Hello à tous,
 Figurez-vous qu’il faisait très froid ces temps-ci et cela a été propice à un gros weekend de pêche. Je suis allé du côté de l’Estaque aux verts flots (près de Marseille), et j’ai pu ramener quelques belles pièces. Je les ai cuisinées ensemble pour obtenir ceci :
 
