@@ -1,3 +1,4 @@
+<img width="542" alt="Capture d’écran 2021-04-25 à 19 11 57" src="https://user-images.githubusercontent.com/16688197/116002481-3a182500-a5fa-11eb-906f-8669cec869e5.png">
 
 # PurpleGiraffe_UseTheDeviceCamera_Swift
 
