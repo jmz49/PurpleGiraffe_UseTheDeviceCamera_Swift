@@ -1,4 +1,3 @@
-<img width="542" alt="Capture d’écran 2021-04-25 à 19 11 57" src="https://user-images.githubusercontent.com/16688197/116002481-3a182500-a5fa-11eb-906f-8669cec869e5.png">
 
 # PurpleGiraffe_UseTheDeviceCamera_Swift
 
@@ -10,7 +9,8 @@
 
 <img width="273" alt="Capture d’écran 2021-04-25 à 18 33 56" src="https://user-images.githubusercontent.com/16688197/116001549-3e8e0f00-a5f5-11eb-8000-0895f919392f.png">                <img width="582" alt="Capture d’écran 2021-04-25 à 18 36 12" src="https://user-images.githubusercontent.com/16688197/116001538-36ce6a80-a5f5-11eb-96a6-ca193d972d1b.png">
 
-<img width="637" alt="Capture d’écran 2021-04-25 à 19 06 39" src="https://user-images.githubusercontent.com/16688197/116002314-79924180-a5f9-11eb-938e-5bbdf86c992e.png">
+<img width="637" alt="Capture d’écran 2021-04-25 à 19 06 39" src="https://user-images.githubusercontent.com/16688197/116002314-79924180-a5f9-11eb-938e-5bbdf86c992e.png">           <img width="542" alt="Capture d’écran 2021-04-25 à 19 11 57" src="https://user-images.githubusercontent.com/16688197/116002514-65027900-a5fa-11eb-8982-b026c832b04c.png">
+
 
 
 
