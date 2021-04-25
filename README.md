@@ -29,12 +29,12 @@ Ensuite l'usage est intuitif :
 
        Or, use the yellow button.
        
- A noter, la photo prise ou choisie est éditable, zoom et recadrage.    
+ A noter, la photo prise ou choisie est éditable, zoom et recadrage, et un petit swipe-up sur la photo permet de partager celle-ci (sms, email, etc), avec une animation en prime.   
 
 
 Je reste à disposition pour toutes questions éventuelles.
 
-A+
+A+ 😀
 
 
        
