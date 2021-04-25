@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PurpleGiraffe_Challenge_UserPhotoDevice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J5j-Ty-Tld">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PG_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Pfb-Ua-t9x" userLabel="Image View Logo">
+                                <rect key="frame" x="155.5" y="24" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="7VC-Ob-rrp"/>
+                                    <constraint firstAttribute="width" constant="64" id="7tU-Ar-WFH">
+                                        <variation key="heightClass=compact" constant="48"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="64" id="IvM-7Q-DIC">
+                                        <variation key="heightClass=compact" constant="48"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="64" id="W7m-1k-Frp"/>
+                                    <constraint firstAttribute="width" secondItem="Pfb-Ua-t9x" secondAttribute="height" multiplier="1:1" id="riW-0i-KIL"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7tU-Ar-WFH"/>
+                                        <exclude reference="IvM-7Q-DIC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="7VC-Ob-rrp"/>
+                                        <include reference="7tU-Ar-WFH"/>
+                                        <include reference="IvM-7Q-DIC"/>
+                                        <exclude reference="W7m-1k-Frp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chalenge" translatesAutoresizingMaskIntoConstraints="NO" id="iSd-K5-zPg" userLabel="Image View Photo">
+                                <rect key="frame" x="48" y="392" width="279" height="115"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="none" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="m0k-BO-e9R" userLabel="HowToUse">
+                                <rect key="frame" x="12" y="104" width="351.5" height="280"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <string key="text">1) click on the image to go to the photo library,
+
+2) Choose and crop another photo,
+
+3) Swipe up on the photo to share it.
+
+       Or, use the yellow button.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFx-xR-VQL" userLabel="cameraButton">
+                                <rect key="frame" x="87.5" y="567" width="200" height="56"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="TB3-RP-Vfk"/>
+                                    <constraint firstAttribute="height" constant="56" id="io6-6K-QN5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Select Image From ...">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickMySelectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tdm-sF-yyY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z0v-nd-0Fd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pfb-Ua-t9x" firstAttribute="top" secondItem="Z0v-nd-0Fd" secondAttribute="top" constant="24" id="5K8-NA-luX"/>
+                            <constraint firstItem="m0k-BO-e9R" firstAttribute="centerY" secondItem="J5j-Ty-Tld" secondAttribute="centerY" id="7xM-up-2yc"/>
+                            <constraint firstItem="Z0v-nd-0Fd" firstAttribute="trailing" secondItem="iSd-K5-zPg" secondAttribute="trailing" constant="48" id="Ayj-Vz-sQ8">
+                                <variation key="heightClass=compact" constant="48"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="Pfb-Ua-t9x" firstAttribute="leading" secondItem="Z0v-nd-0Fd" secondAttribute="leading" constant="40" id="BOg-0T-QtG">
+                                <variation key="heightClass=compact" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="iSd-K5-zPg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kFx-xR-VQL" secondAttribute="trailing" constant="8" symbolic="YES" id="CLI-Y2-52g"/>
+                            <constraint firstItem="kFx-xR-VQL" firstAttribute="leading" secondItem="Z0v-nd-0Fd" secondAttribute="leading" constant="64" id="GAD-lQ-gy3">
+                                <variation key="heightClass=compact" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="Z0v-nd-0Fd" firstAttribute="trailing" secondItem="m0k-BO-e9R" secondAttribute="trailing" constant="16" id="IGg-SS-DHn">
+                                <variation key="heightClass=compact" constant="600"/>
+                            </constraint>
+                            <constraint firstItem="iSd-K5-zPg" firstAttribute="leading" secondItem="m0k-BO-e9R" secondAttribute="trailing" constant="4" id="Jdi-6S-ITc"/>
+                            <constraint firstItem="Z0v-nd-0Fd" firstAttribute="bottom" secondItem="iSd-K5-zPg" secondAttribute="bottom" constant="160" id="LbK-Bl-Uro">
+                                <variation key="heightClass=compact" constant="48"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="iSd-K5-zPg" firstAttribute="top" secondItem="m0k-BO-e9R" secondAttribute="bottom" constant="8" id="Nde-YS-Z56"/>
+                            <constraint firstItem="kFx-xR-VQL" firstAttribute="top" secondItem="iSd-K5-zPg" secondAttribute="bottom" constant="8" symbolic="YES" id="QRI-ZT-8Gj">
+                                <variation key="heightClass=compact" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="m0k-BO-e9R" firstAttribute="leading" secondItem="Z0v-nd-0Fd" secondAttribute="leading" constant="4" id="ZFW-83-cAo">
+                                <variation key="heightClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="m0k-BO-e9R" firstAttribute="centerX" secondItem="J5j-Ty-Tld" secondAttribute="centerX" id="cxj-Nt-LEt"/>
+                            <constraint firstItem="Pfb-Ua-t9x" firstAttribute="top" secondItem="Z0v-nd-0Fd" secondAttribute="top" constant="32" id="dP3-T9-oEK">
+                                <variation key="heightClass=compact" constant="48"/>
+                            </constraint>
+                            <constraint firstItem="Pfb-Ua-t9x" firstAttribute="leading" secondItem="Z0v-nd-0Fd" secondAttribute="leading" constant="64" id="dtp-Te-Lsw"/>
+                            <constraint firstItem="iSd-K5-zPg" firstAttribute="top" secondItem="Z0v-nd-0Fd" secondAttribute="top" constant="392" id="f1n-IF-h3O">
+                                <variation key="heightClass=compact" constant="48"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="iSd-K5-zPg" firstAttribute="leading" secondItem="Z0v-nd-0Fd" secondAttribute="leading" constant="48" id="f2v-NL-OQB">
+                                <variation key="heightClass=compact" constant="392"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="296"/>
+                            </constraint>
+                            <constraint firstItem="Pfb-Ua-t9x" firstAttribute="centerX" secondItem="J5j-Ty-Tld" secondAttribute="centerX" id="hmY-u7-3Wn"/>
+                            <constraint firstItem="kFx-xR-VQL" firstAttribute="top" secondItem="m0k-BO-e9R" secondAttribute="bottom" constant="32" id="r33-Ki-okr"/>
+                            <constraint firstItem="Z0v-nd-0Fd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m0k-BO-e9R" secondAttribute="trailing" id="rbJ-1A-FKj"/>
+                            <constraint firstItem="m0k-BO-e9R" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Z0v-nd-0Fd" secondAttribute="leading" id="uMf-Mt-NGH"/>
+                            <constraint firstItem="kFx-xR-VQL" firstAttribute="top" secondItem="iSd-K5-zPg" secondAttribute="bottom" constant="60" id="vur-7Y-gQI"/>
+                            <constraint firstItem="Pfb-Ua-t9x" firstAttribute="centerY" secondItem="J5j-Ty-Tld" secondAttribute="centerY" id="x4h-7x-Bfy"/>
+                            <constraint firstItem="m0k-BO-e9R" firstAttribute="top" secondItem="Pfb-Ua-t9x" secondAttribute="bottom" constant="16" id="ysI-Nc-hO5"/>
+                            <constraint firstAttribute="trailing" secondItem="m0k-BO-e9R" secondAttribute="trailing" constant="16" id="zDh-4u-hAK"/>
+                            <constraint firstItem="kFx-xR-VQL" firstAttribute="centerX" secondItem="J5j-Ty-Tld" secondAttribute="centerX" id="zla-1W-JjY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IGg-SS-DHn"/>
+                                <exclude reference="7xM-up-2yc"/>
+                                <exclude reference="ZFW-83-cAo"/>
+                                <exclude reference="zDh-4u-hAK"/>
+                                <exclude reference="BOg-0T-QtG"/>
+                                <exclude reference="dP3-T9-oEK"/>
+                                <exclude reference="dtp-Te-Lsw"/>
+                                <exclude reference="x4h-7x-Bfy"/>
+                                <exclude reference="CLI-Y2-52g"/>
+                                <exclude reference="Jdi-6S-ITc"/>
+                                <exclude reference="GAD-lQ-gy3"/>
+                                <exclude reference="QRI-ZT-8Gj"/>
+                                <exclude reference="r33-Ki-okr"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="IGg-SS-DHn"/>
+                                <exclude reference="rbJ-1A-FKj"/>
+                                <include reference="7xM-up-2yc"/>
+                                <include reference="ZFW-83-cAo"/>
+                                <exclude reference="cxj-Nt-LEt"/>
+                                <exclude reference="uMf-Mt-NGH"/>
+                                <exclude reference="ysI-Nc-hO5"/>
+                                <exclude reference="zDh-4u-hAK"/>
+                                <exclude reference="5K8-NA-luX"/>
+                                <include reference="BOg-0T-QtG"/>
+                                <include reference="dP3-T9-oEK"/>
+                                <exclude reference="dtp-Te-Lsw"/>
+                                <exclude reference="hmY-u7-3Wn"/>
+                                <exclude reference="x4h-7x-Bfy"/>
+                                <include reference="CLI-Y2-52g"/>
+                                <include reference="Jdi-6S-ITc"/>
+                                <exclude reference="Nde-YS-Z56"/>
+                                <include reference="GAD-lQ-gy3"/>
+                                <exclude reference="QRI-ZT-8Gj"/>
+                                <include reference="r33-Ki-okr"/>
+                                <exclude reference="vur-7Y-gQI"/>
+                                <exclude reference="zla-1W-JjY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="iSd-K5-zPg" id="kOy-bG-YCu"/>
+                        <outlet property="mySelectButton" destination="kFx-xR-VQL" id="d6C-Ix-p5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.794642857142854" y="82.608695652173921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chalenge" width="824" height="464"/>
+        <image name="PG_logo" width="706" height="398"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
